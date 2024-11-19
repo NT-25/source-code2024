@@ -1,0 +1,32 @@
+@charset "utf-8";
+body{
+    background-image: url(uranai.jpg);
+}
+
+.table{
+    width: 99%;
+    max-width: 900px;
+    table-layout: fixed;
+}
+td {
+  width: 220px;
+  height: 350px;
+  margin: 2px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+td.card{
+    width: 220px;
+    min-width: 220px;
+    height: 350px;
+    min-height: 350px;
+    margin: 2px;
+    display: inline-block;
+    height: max-content;
+}
+td.card.back{
+    background-image: url(./tarot_0.jpg) !important;
+    display: inline-block;
+    height: max-content;
+}
