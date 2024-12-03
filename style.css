@@ -1,6 +1,61 @@
 @charset "utf-8";
 body{
-    background-image: url(uranai.jpg);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container{
+    position: absolute;
+    z-index: 3;
+}
+
+.slideshow{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.img01{
+    background-image: url('image01.png');
+}
+
+.img02{
+    background-image: url('image02.png');
+    opacity: 0;
+}
+
+.img03{
+    background-image: url('image03.png');
+    opacity: 0;
+}
+
+@keyframes slide {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.slide:nth-child(1){
+    animation:slide 9s infinite;
+}
+
+.slide:nth-child(2){
+    animation:slide 9s 3s infinite;
+}
+
+.alide:nth-child(3){
+    animation:slide 9s 3s infinite;
 }
 
 .table{
