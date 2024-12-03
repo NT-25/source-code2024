@@ -63,6 +63,7 @@ body{
     max-width: 900px;
     table-layout: fixed;
 }
+
 td {
   width: 220px;
   height: 350px;
